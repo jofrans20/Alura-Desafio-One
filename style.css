@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --corprincipal: #E5E5E5;
+    --corsegundaria: #0A3871;
+    --corterciaria: #f6f6f6;
+
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+
+}
+
+body {
+    background: var(--corprincipal);
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.display-none {
+    display: none !important;
+}
+
+.cabecalho {
+    margin-top: 40px;
+    margin-left: 40px;
+
+}
+
+.cabecalho img {
+    max-width: 140px;
+    max-height: 140px;
+    width: auto;
+    height: auto;
+}
+
+.recebe-texto {
+    width: 500px;
+    height: 600px;
+
+}
+
+.area-de-texto {
+    margin-top: 120px;
+    padding: 0 0 0 0;
+    height: 330px;
+    width: 400px;
+    font-size: 32px;
+    border: none;
+    color: var(--corsegundaria);
+    outline: none;
+    background-color: var(--corprincipal);
+
+}
+
+textarea::placeholder {
+    color: var(--corsegundaria);
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao {
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    width: 230px;
+    height: 67px;
+    cursor: pointer;
+    font-size: 1.20rem;
+}
+
+.botao-criptografar {
+    background-color: #e8eff7;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+
+
+
+}
+
+.botao-descriptografar {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+
+
+}
+
+.informacao {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.decodificador {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 18px 10px 5px -2px rgba(0, 0, 0, 0.31);
+    padding: 16px;
+
+}
+
+.decodificador textarea {
+    width: 100%;
+}
+
+#decodificador-menu, #decodificador-sem-texto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.decodificador textarea {
+    height: 500px;
+    border: none;
+    outline: none;
+
+}
+
+.botao-copiar {
+    color: var(--corsegundaria);
+}
+
+.rodape {
+    color: var(--corprincipal);
+    background-color: var(--corsegundaria);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

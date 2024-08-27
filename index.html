@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Decodificador</title>
+  </head>
+
+  <body>
+    <main>
+      <header class="cabecalho">
+        <img
+          src="elementos/logo alura.png"
+          alt="Um 'A' minusculo e azul escuro representando a logo da alura"
+        />
+      </header>
+
+      <section class="recebe-texto">
+        <textarea
+          class="area-de-texto"
+          id="input-text"
+          cols="41"
+          rows="4"
+          style="resize: none"
+          placeholder="Digite seu texto aqui"
+        ></textarea>
+        <p class="informacao">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-exclamation-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2"
+            ></path></svg>
+          >somente letras minusculas e sem acento
+        </p>
+        <div class="botoes">
+          <button class="botao-criptografar botao" onclick="criptografar()">
+            Criptografar
+          </button>
+          <button
+            class="botao-descriptografar botao"
+            onclick="descriptografar()"
+          >
+            Descriptografar
+          </button>
+        </div>
+      </section>
+
+      <section class="decodificador">
+        <div id="decodificador-sem-texto" class="">
+          <img src="elementos/boneco.png" alt="" width="100%" />
+          <h2>Nenhuma mensagem encontrada!</h2>
+          <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+        </div>
+        <!-- Escondido por padrão com .display-none -->
+        <div id="decodificador-menu" class="display-none">
+          <textarea
+            class="imprime-texto"
+            id=""
+            cols="20"
+            rows="10"
+            style="resize: none"
+            readonly
+          ></textarea>
+          <button class="botao-copiar botao" onclick="copiar()">Copiar</button>
+        </div>
+      </section>
+    </main>
+    <footer class="rodape">Jofran Glim Nunes 2024</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
